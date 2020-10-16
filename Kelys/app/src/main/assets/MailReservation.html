@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Simple Transactional Email</title>
+
+  </head>
+  <body style="background-color: #f6f6f6;font-family: sans-serif;-webkit-font-smoothing: antialiased;font-size: 14px;line-height: 1.4;margin: 0;padding: 0;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <span class="preheader" style="color: transparent;display: none;height: 0;max-height: 0;max-width: 0;opacity: 0;overflow: hidden;mso-hide: all;visibility: hidden;width: 0;">Une réservation vient d'être faite sur l'application par l'utilisateur <b>{username}</b></span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container" style="display: block;margin: 0 auto !important;max-width: 580px;padding: 10px;width: 580px;">
+          <div class="content" style="box-sizing: border-box;display: block;margin: 0 auto;max-width: 580px;padding: 10px;">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <table role="presentation" class="main" style="border-collapse: separate;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;background: #ffffff;border-radius: 3px;width: 100%;">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper" style="box-sizing: border-box;padding: 20px; ">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;">
+                    <tr>
+                      <td>
+                        <p style="font-family: sans-serif;font-size: 14px;font-weight: normal;margin: 0;margin-bottom: 15px;">Bonjour Admin,</p>
+                        <p style="font-family: sans-serif;font-size: 14px;font-weight: normal;margin: 0;margin-bottom: 15px;">Une nouvelle réservation de {categorie} vient d'être faite.</p>
+
+                        <p style="font-family: sans-serif;font-size: 14px;font-weight: normal;margin: 0;margin-bottom: 15px;">Voici les détails de la réservation :</p>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="styled-table" style="border-collapse: collapse;margin: 25px 0;font-size: 0.9em;font-family: sans-serif;min-width: 400px;box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);border-collapse: separate;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;">
+                          <thead>
+                            <tr style="background-color: #0e74ab;color: #ffffff;text-align: left; ">
+                              <th style="padding: 12px 15px;">Type de produit</th>
+                              <th style="padding: 12px 15px;">Nom du produit</th>
+                              <th style="padding: 12px 15px;">Coût du produit</th>
+                              <th style="padding: 12px 15px;">Dates de réservations</th>
+                              <th style="padding: 12px 15px;">Nom du demandeur</th>
+                              <th style="padding: 12px 15px;">Adresse mail du demandeur</th>
+                              <th style="padding: 12px 15px;">N° du demandeur</th>
+                              <th style="padding: 12px 15px;">Statut</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          <tr class="active-row" style="border-bottom: 2px solid #0e74ab;font-weight: bold;color: #0e74ab;">
+                            <td style="padding: 12px 15px;font-family: sans-serif;font-size: 14px;vertical-align: top;">{categorie}</td>
+                            <td style="padding: 12px 15px;font-family: sans-serif;font-size: 14px;vertical-align: top;">{nomProduit}</td>
+                            <td style="padding: 12px 15px;font-family: sans-serif;font-size: 14px;vertical-align: top;">{cout}</td>
+                            <td style="padding: 12px 15px;font-family: sans-serif;font-size: 14px;vertical-align: top;">Du {date1} au {date2}</td>
+                            <td style="padding: 12px 15px;font-family: sans-serif;font-size: 14px;vertical-align: top;">{username}</td>
+                            <td style="padding: 12px 15px;font-family: sans-serif;font-size: 14px;vertical-align: top;">{email}</td>
+                            <td style="padding: 12px 15px;font-family: sans-serif;font-size: 14px;vertical-align: top;">{phone}</td>
+                            <td><b style="color : black">En attente</b></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                        <p style="font-family: sans-serif;font-size: 14px;font-weight: normal;margin: 0;margin-bottom: 15px;">L'application a été développée par l'équipe IT de Kelys. Voici leur GitHub pour plus de détails <a href="https://github.com/Stephanie0905" target="_blank" style="color: #3498db;text-decoration: underline; ">GitHub</a> </p>
+                        <p style="font-family: sans-serif;font-size: 14px;font-weight: normal;margin: 0;margin-bottom: 15px;">Cordialement, <br/> <br/> <b>Kelys  Development Team</b></p>
+						
+						<p style="font-family: sans-serif;font-size: 14px;font-weight: normal;margin: 0;margin-bottom: 15px;text-align: right">
+						<!--<img width="100px" height="100px" src='cid:image'> -->
+						</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+            <!-- END CENTERED WHITE CONTAINER -->
+
+            <!-- START FOOTER -->
+            <div class="footer" style="clear: both;margin-top: 10px;text-align: center;width: 100%;">
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;">
+                <tr>
+                  <td class="content-block" style="padding-bottom: 10px;padding-top: 10px;color: #999999;font-size: 12px; text-align: center;">
+                    <span class="apple-link" style="color: #999999;font-size: 12px; text-align: center;">Company Inc, Kelys</span>
+                    <br> Kelys IT Team.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block powered-by" style="padding-bottom: 10px;padding-top: 10px;color: #999999;font-size: 12px; text-align: center;">
+                    Powered by <a href="https://github.com/Stephanie0905" style="text-decoration: none;color: #999999;font-size: 12px; text-align: center;color: #3498db;text-decoration: underline; ">Kelys IT Team</a>.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- END FOOTER -->
+
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>
